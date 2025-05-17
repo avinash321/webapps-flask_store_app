@@ -1,2 +1,2 @@
-# webapps-flask_store_app
+# flask_store_app
 Flask Store Management App
