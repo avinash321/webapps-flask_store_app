@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Item</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Update Item: {{ item.name }}</h1>
+    <form method="post">
+        Change Quantity (use negative to subtract):<br>
+        <input type="number" name="quantity" required><br>
+        <button type="submit">Update</button>
+    </form>
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+</body>
+</html>
