@@ -31,7 +31,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: test  # This runs only if test job succeeds
+    needs: build-test  # This runs only if test job succeeds
     steps:
     - name: Deploy Logic
       run: echo "All tests passed. Deploying now..."
